@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:shamo_store/home/main_page.dart';
 import 'package:shamo_store/pages/sign_in_page.dart';
+import 'package:shamo_store/pages/sign_up_page.dart';
 import 'package:shamo_store/pages/splash_page.dart';
 
 void main() {
@@ -14,6 +16,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => SplashPage(),
         '/sign-in': (context) => SignInPage(),
+        '/sign-up': (context) => SignUpPage(),
+        '/home': (context) => MainPage(),
       },
     );
   }
