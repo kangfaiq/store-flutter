@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:shamo_store/home/chat_page.dart';
-import 'package:shamo_store/home/home_page.dart';
-import 'package:shamo_store/home/profile_page.dart';
-import 'package:shamo_store/home/wishlist_page.dart';
+import 'package:shamo_store/pages/home/profile_page.dart';
+import 'package:shamo_store/pages/home/wishlist_page.dart';
 import 'package:shamo_store/theme.dart';
+
+import 'chat_page.dart';
+import 'home_page.dart';
 
 class MainPage extends StatefulWidget {
   const MainPage({Key? key}) : super(key: key);
