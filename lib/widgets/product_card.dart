@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:shamo_store/models/product_model.dart';
 import 'package:shamo_store/theme.dart';
 
 class ProductCart extends StatelessWidget {
-  const ProductCart({Key? key}) : super(key: key);
+  final ProductModel product;
+  ProductCart(this.product);
 
   @override
   Widget build(BuildContext context) {
@@ -26,8 +28,8 @@ class ProductCart extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            Image.asset(
-              'assets/image_shoes.png',
+            Image.network(
+              product.galleries[0].url,
               width: 215,
               height: 150,
               fit: BoxFit.cover,
@@ -40,7 +42,7 @@ class ProductCart extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Hiking",
+                    product.category.name,
                     style: secondaryTextStyle.copyWith(
                       fontSize: 12,
                     ),
@@ -49,18 +51,19 @@ class ProductCart extends StatelessWidget {
                     height: 6,
                   ),
                   Text(
-                    "COURT VISION 2.0",
+                    product.name,
                     style: blackTextStyle.copyWith(
                       fontSize: 18,
                       fontWeight: semiBold,
                     ),
                     overflow: TextOverflow.ellipsis,
+                    maxLines: 1,
                   ),
                   SizedBox(
                     height: 6,
                   ),
                   Text(
-                    "\$58,67",
+                    "\$${product.price}",
                     style: priceTextStyle.copyWith(
                       fontWeight: medium,
                     ),

@@ -4,7 +4,6 @@ import 'package:shamo_store/widgets/cart_card.dart';
 import '../theme.dart';
 
 class CartPage extends StatelessWidget {
-  const CartPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

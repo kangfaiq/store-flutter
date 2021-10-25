@@ -3,7 +3,6 @@ import 'package:shamo_store/theme.dart';
 import 'package:shamo_store/widgets/chat_bubble.dart';
 
 class DetailChatPage extends StatelessWidget {
-  const DetailChatPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

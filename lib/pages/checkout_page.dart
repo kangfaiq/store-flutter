@@ -3,7 +3,6 @@ import 'package:shamo_store/theme.dart';
 import 'package:shamo_store/widgets/checkout_card.dart';
 
 class CheckoutPage extends StatelessWidget {
-  const CheckoutPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

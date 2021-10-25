@@ -8,12 +8,11 @@ class ChatBubble extends StatelessWidget {
   final bool isSender;
   final bool hasProduct;
 
-  const ChatBubble({
-    Key? key,
+  ChatBubble({
     this.isSender = false,
-    this.text = "",
-    this.hasProduct = false,
-  }) : super(key: key);
+    this.text = '',
+    this.hasProduct,
+  });
 
   @override
   Widget build(BuildContext context) {

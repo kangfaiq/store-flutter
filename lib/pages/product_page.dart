@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:shamo_store/theme.dart';
 
 class ProductPage extends StatefulWidget {
-  const ProductPage({Key? key}) : super(key: key);
 
   @override
   _ProductPageState createState() => _ProductPageState();

@@ -3,7 +3,6 @@ import 'package:shamo_store/theme.dart';
 import 'package:shamo_store/widgets/wishlist_card.dart';
 
 class WishlistPage extends StatelessWidget {
-  const WishlistPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
