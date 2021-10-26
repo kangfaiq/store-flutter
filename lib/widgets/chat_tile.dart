@@ -1,18 +1,29 @@
 import 'package:flutter/material.dart';
-import 'package:shamo_store/theme.dart';
+import 'package:shamo_store/models/message_model.dart';
+import 'package:shamo_store/models/product_model.dart';
+import 'package:shamo_store/pages/detail_chat_page.dart';
+
+import '../theme.dart';
 
 class ChatTile extends StatelessWidget {
+  final MessageModel message;
+  ChatTile(this.message);
 
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        Navigator.pushNamed(context, '/detail-chat');
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => DetailChatPage(
+              UninitializedProductModel(),
+            ),
+          ),
+        );
       },
       child: Container(
-        margin: EdgeInsets.only(
-          top: 33,
-        ),
+        margin: EdgeInsets.only(top: 33),
         child: Column(
           children: [
             Row(
@@ -29,23 +40,23 @@ class ChatTile extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        "Shoe Store",
+                        'Shoe Store',
                         style: primaryTextStyle.copyWith(
                           fontSize: 15,
                         ),
                       ),
                       Text(
-                        "Good night, This item is on...",
+                        message.message,
                         style: secondaryTextStyle.copyWith(
                           fontWeight: light,
                         ),
                         overflow: TextOverflow.ellipsis,
-                      )
+                      ),
                     ],
                   ),
                 ),
                 Text(
-                  "Now",
+                  'Now',
                   style: secondaryTextStyle.copyWith(
                     fontSize: 10,
                   ),
@@ -58,7 +69,7 @@ class ChatTile extends StatelessWidget {
             Divider(
               thickness: 1,
               color: Color(0xff2B2939),
-            )
+            ),
           ],
         ),
       ),

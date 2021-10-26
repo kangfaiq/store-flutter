@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "2937121902",
+    "project_id": "bwa-shamo-849ee",
+    "storage_bucket": "bwa-shamo-849ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:2937121902:android:594a949d693e3549300a7f",
+        "android_client_info": {
+          "package_name": "net.fortinity.shamo_store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "2937121902-e598v9qutvujh9r183ub3ck1giufss0t.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAb2RVZSrrQ6E0uVp0jly7W5I5TZtSChC8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "2937121902-e598v9qutvujh9r183ub3ck1giufss0t.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
